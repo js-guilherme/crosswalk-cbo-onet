@@ -3,8 +3,6 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 from datetime import datetime
 
-os.chdir(r'C:\Users\jeffe\OneDrive\Área de Trabalho\Criação da Tábua de Conversão')
-
 model = SentenceTransformer("Alibaba-NLP/gte-multilingual-base", trust_remote_code=True)
 
 data_cbo = pd.read_excel("cbo description.xlsx", sheet_name=0)
